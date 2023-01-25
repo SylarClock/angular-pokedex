@@ -1,0 +1,41 @@
+
+.type-box{
+    display: flex;
+    padding: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.4s ease;
+    margin-top: 10px;
+}
+.type-box fa-icon{
+    font-size: 25px;
+}
+.type-box .icon-text h3{
+    font-weight: bold;
+}
+.icon-box{
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.custom-sidebar.fold{
+    width: 60px;
+}
+
+.fire{
+    color: red;
+}
+
+.type-box.all:hover, .type-box.all.selected{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.type-box.fire:hover, .type-box.fire.selected{
+    background-color: red;
+    color: white;
+}

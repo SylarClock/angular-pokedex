@@ -1,0 +1,16 @@
+<div class="custom-sidebar">
+    <div class="form-floating">
+        <input id="searchBox" type="text" class="form-control" placeholder="Pokemon o id">
+        <label for="searchBox">Buscar</label>
+    </div>
+    <hr>
+
+    <div *ngFor="let ptype of type_list" >
+        <app-type-button class="mt-2 mb-2" [type_name]="ptype"></app-type-button>
+
+    </div>
+    
+    
+    
+      
+</div>
