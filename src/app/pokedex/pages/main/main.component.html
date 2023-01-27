@@ -1,1 +1,15 @@
-<p>main works!</p>
+<app-side-bar></app-side-bar>
+
+<div class="container main-container">
+    <div class="row">
+        <!-- <app-pokemon-card
+
+            class="col-4"
+
+        ></app-pokemon-card>
+        <app-pokemon-card class="col-4"></app-pokemon-card> -->
+        <app-pokemon-card *ngFor="let pkm of pokemons" class="col-4" [name]="pkm.name" ></app-pokemon-card>
+
+    </div>
+
+</div>

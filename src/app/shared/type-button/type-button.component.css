@@ -1,15 +1,16 @@
 
 .type-box{
-    display: flex;
-    padding: 5px;
-    padding-left: 10px;
-    padding-top: 10px;
     background-color: #eee;
     border-radius: 10px;
+    /* box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important; */
     color: white;
     cursor: pointer;
-    transition: background-color 0.5s ease, color 0.4s ease;
+    display: flex;
     margin-top: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding: 5px;
+    transition: background-color 0.5s ease, color 0.4s ease;
 }
 .type-box fa-icon{
     font-size: 25px;
@@ -26,16 +27,54 @@
     width: 60px;
 }
 
-.fire{
-    color: red;
-}
+.normal{ color: #B2B2B2 }
+.fighting{ color: #F2921D;}
+.flying{ color: #7286D3;}
+.poison{ color: #301E67;}
+.ground{ color: #E5BA73;}
+.rock{ color: #A64B2A;}
+.bug{ color: #ABC270;}
+.ghost{ color: #472183;}
+.steel{ color: #D6E4E5;}
+.fire{ color: red; }
+.water{ color: #7DE5ED;}
+.grass{ color: #68B984;}
+.electric{ color: #FFEA20;}
+.psychic{ color: #E98EAD;}
+.ice{ color: #E3F6FF;}
+.dragon{ color: #6D67E4;}
+.dark{ color: #453C67;}
+.fairy{ color: #FFCEFE;}
+.unknown{ color: #567189;}
+.shadow{ color: #3A4F7A;}
 
 .type-box.all:hover, .type-box.all.selected{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
 
-.type-box.fire:hover, .type-box.fire.selected{
-    background-color: red;
+.type-box.normal:hover, .type-box.normal.selected{ background-color: #B2B2B2; }
+.type-box.fighting:hover, .type-box.fighting.selected{ background-color: #F2921D; }
+.type-box.flying:hover, .type-box.flying.selected{ background-color: #7286D3; }
+.type-box.poison:hover, .type-box.poison.selected{ background-color: #301E67; }
+.type-box.ground:hover, .type-box.ground.selected{ background-color: #E5BA73; }
+.type-box.rock:hover, .type-box.rock.selected{ background-color: #A64B2A; }
+.type-box.bug:hover, .type-box.bug.selected{ background-color: #ABC270; }
+.type-box.ghost:hover, .type-box.ghost.selected{ background-color: #472183; }
+.type-box.steel:hover, .type-box.steel.selected{ background-color: #D6E4E5; }
+.type-box.fire:hover, .type-box.fire.selected{ background-color: red; }
+.type-box.water:hover, .type-box.water.selected{ background-color: #7DE5ED; }
+.type-box.grass:hover, .type-box.grass.selected{ background-color: #68B984; }
+.type-box.electric:hover, .type-box.electric.selected{ background-color: #FFEA20; }
+.type-box.psychic:hover, .type-box.psychic.selected{ background-color: #E98EAD; }
+.type-box.ice:hover, .type-box.ice.selected{ background-color: #E3F6FF; }
+.type-box.dragon:hover, .type-box.dragon.selected{ background-color: #6D67E4; }
+.type-box.dark:hover, .type-box.dark.selected{ background-color: #453C67; }
+.type-box.fairy:hover, .type-box.fairy.selected{ background-color: #FFCEFE; }
+.type-box.unknown:hover, .type-box.unknown.selected{ background-color: #567189; }
+.type-box.shadow:hover, .type-box.shadow.selected{ background-color: #3A4F7A; }
+
+
+.type-box:hover{
     color: white;
 }

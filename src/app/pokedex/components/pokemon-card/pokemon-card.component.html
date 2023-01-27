@@ -1,0 +1,15 @@
+<div class="custom-card shadow-card">
+    <img 
+        [src]="urlImage" 
+        alt="pokemon image"
+        width="100"
+    />
+    <label> No. {{ id }} </label>
+    <h3>{{ name | titlecase }}</h3>
+    <div class="types-tag">
+
+        <div *ngFor="let pType of pokemonInfo?.types "  class="type-tag {{ pType.type.name }}">
+            {{ pType.type.name | uppercase }}
+        </div>
+    </div>
+</div>

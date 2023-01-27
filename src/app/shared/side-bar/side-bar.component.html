@@ -4,13 +4,12 @@
         <label for="searchBox">Buscar</label>
     </div>
     <hr>
-
-    <div *ngFor="let ptype of type_list" >
-        <app-type-button class="mt-2 mb-2" [type_name]="ptype"></app-type-button>
+    <div class="scroll">
+        <div *ngFor="let ptype of type_list" >
+            <app-type-button class="mt-2 mb-2" [type_name]="ptype.name"></app-type-button>
+    
+        </div>
 
     </div>
-    
-    
-    
       
 </div>
